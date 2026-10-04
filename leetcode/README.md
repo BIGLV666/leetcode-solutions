@@ -1,0 +1,55 @@
+# LeetCode 题解
+
+多语言 LeetCode 刷题记录，以 Go 为主，兼顾 C++、Java、Python，以及少量 SQL 题。
+
+## 目录
+
+```
+leetcode/
+├── common/              Go 共享库（链表、二叉树、序列化、测试工具）
+├── datastructure/       数据结构学习专题（跳表、字典树、线段树、树状数组等）
+├── cpp/                 C++ 头文件（链表、二叉树、序列化）
+├── java/                Java 基础类（链表、二叉树、序列化）
+├── python/              Python 模块（链表、二叉树、序列化）
+├── Hot100/              热题 100 专项题单（含完整题单与部分解法）
+├── <problem>/           各题目目录（内含解法、测试、部分难题附思路笔记）
+└── PROBLEMS.md          题目索引
+```
+
+## 语言
+
+| 语言   | 解答数 | 说明                                  |
+|--------|--------|---------------------------------------|
+| Go     | 150    | 主力语言，题目覆盖最广                |
+| C++    | 4      | 双指针、BFS、二分                     |
+| Java   | 124    | 栈、设计题、回溯、表达式解析、树等    |
+| Python | 38     | 模拟、回溯、数学、树、暴力对拍        |
+| SQL    | 17     | LeetCode 数据库题，用 sqlite3 建表实跑校验 |
+
+统计口径：各题目目录（含 Hot100/）下的解法文件数，不含测试文件；不含 common/、leetcode/、sort/、datastructure/、cpp/、java/、python/ 等共享库与学习专题目录，也不含 luogu/、lanqiao2017javaB/ 等非 LeetCode 题目目录。
+
+## 特色
+
+- 每个题目独立目录，解法与测试同在
+- 各语言提供统一的链表/二叉树构建与序列化工具，方便本地调试
+- 数据结构专题含中文教程与单元测试（[datastructure/](datastructure/)）
+- SQL 题用 Python 标准库 `sqlite3` 建表、灌官方示例数据后实跑校验（见各题目目录下的 `*-*_test.py`）
+- 部分难题附 `思路.md`，记录解题思路、复杂度与易错点
+
+## 题目索引
+
+→ [PROBLEMS.md](PROBLEMS.md)
+
+## Hot100 题单
+
+→ [Hot100/README.md](Hot100/README.md)
+
+## 贡献
+
+欢迎提交 PR 补充其他语言的解法，或为已有题目追加思路笔记。
+
+可参考的风格：
+
+- 解法放在问题同名目录下，文件名反映语言（`mergeKLists.go` / `Solution.java` / `twoSum.cpp` / `smallestDivisor.py`）
+- 测试用例尽量覆盖边界条件
+- 难题建议附带 `思路.md`（简要说明核心思路、复杂度、易错点）
